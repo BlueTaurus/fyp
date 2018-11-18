@@ -417,10 +417,7 @@ def main(args):
     else:
         args.restore_step = 0
         print("\n > Starting a new training", flush=True)
-        if use_cuda:
-            model = model.cuda()
-            criterion.cuda()
-            criterion_st.cuda()
+        
 
     scheduler = AnnealLR(optimizer, warmup_steps=c.warmup_steps)
     num_params = count_parameters(model)
