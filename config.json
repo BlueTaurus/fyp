@@ -30,11 +30,11 @@
     "checkpoint": true,
     "save_step": 25000,
     "print_step": 10,
-    "run_eval": false,
+    "run_eval": true,
     "data_path": "LJSpeech-1.1/",
     "meta_file_train": "metadata.csv",
     "meta_file_val": "metadata_val.csv",
     "dataset": "LJSpeech",
     "min_seq_len": 0,
-    "output_path": "../keep/"
+    "output_path": "keep/"
 }
